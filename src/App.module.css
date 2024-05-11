@@ -1,0 +1,138 @@
+.container {
+  height: 100vh;
+}
+
+.container header {
+  height: 12.5rem;
+  background: var(--gray-700);
+  padding: 4.5rem 0 5rem;
+}
+
+.container header img {
+  display: flex;
+  margin: 0 auto;
+}
+
+.boxSearch {
+  display: flex;
+  justify-content: center;
+  margin-top: -1.6875rem;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.boxSearch input {
+  width: 39.875rem;
+  height: 3.375rem;
+  background: var(--gray-500);
+
+  border-radius: 8px;
+  border: 2px solid var(--gray-700);
+
+  padding: 16px 16px;
+  color: var(--gray-300);
+  font-size: 16px;
+}
+
+.boxSearch input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 1px var(--purple-700);
+}
+
+.boxSearch button {
+  width: 5.625rem;
+  border-radius: 8px;
+  background: var(--blue-700);
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  border: none;
+
+  display: flex;
+  padding: 16px;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.boxSearch button:focus {
+  outline: none;
+  border: none;
+}
+
+.boxSearch button[type=submit]:not(:disabled):hover {
+  background: var(--blue-400);
+}
+
+.boxSearch button[type=submit]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.content {
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto 0;
+  padding: 0 1rem;
+}
+
+.contentHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.contentHeader div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+  font-size: 0.875rem;
+}
+
+.textBlue {
+  color: var(--blue-400);
+}
+
+.textPurple {
+  color: var(--purple-700);
+}
+
+.counter {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 16px;
+}
+
+.voidBoard {
+  max-width: 46rem;
+  height: 15.25rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.voidBoard img {
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  color: var(--gray-300);
+}
+
+.paragraph.primary {
+  font-weight: bold;
+}
+
+.boardCards {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
